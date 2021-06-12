@@ -34,7 +34,7 @@ import oop.assignment.ex25.password_Validator_class;
 import java.util.Scanner;
 
 public class Solution26 {
-    private static final Scanner in = new Scanner(System.in);5
+    private static final Scanner in = new Scanner(System.in);
 
 
     public static void main(String[] args) {
@@ -46,20 +46,12 @@ public class Solution26 {
         double APR = in.nextDouble();
         System.out.println("What is the monthly payment you can make?");
         double monthly_Payment = in.nextDouble();
-        double months_left = PaymentCalculator_Object.calculateMonthsUntilPaidOff(balance, APR, monthly_Payment);
+        double months_left = PaymentCalculator.calculateMonthsUntilPaidOff(balance, APR, monthly_Payment);
         generateOutput(months_left);
     }
 
-    public static void print_statement_and_scan() {
-        System.out.println("What is your balance?");
-        double balance = in.nextDouble();
-        System.out.println("What is the APR on the card (as a percent)?");
-        double APR = in.nextDouble();
-        System.out.println("What is the monthly payment you can make?");
-        double monthly_Payment = in.nextDouble();
-    }
 
     public static void generateOutput(double months_left) {
-        System.out.printf("It will take you %f months to pay off this card. ", months_left);
+        System.out.printf("It will take you %.0f months to pay off this card. ", months_left);
     }
 }

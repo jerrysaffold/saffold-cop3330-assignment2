@@ -41,7 +41,8 @@ public class Solution25 {
     }
 
     //reads user input
-    public static void readuserInput() {
+    public static void readuserInput()
+    {
         password = in.next();
     }
 
