@@ -1,7 +1,4 @@
 package oop.assignment.ex25;
-
-import java.util.Scanner;
-
 /*
  *  UCF COP3330 Summer 2021 Assignment 25 Solution
  *  Copyright 2021 Jerry Saffold
@@ -27,9 +24,11 @@ value you can evaluate to determine the password strength.
 Do not have the function return a string—you may need to support multiple languages in the future.
 Use a single output statement.
  */
+import java.util.Scanner;
+
 public class Solution25 {
     private static final Scanner in = new Scanner(System.in);
-    private static String word1;
+    private static String password;
 
     public static void main(String[] args) {
         System.out.println("Enter a password and I will tell you the strength. ");
@@ -37,9 +36,9 @@ public class Solution25 {
         //read in string
         readuserInput();
         passwordValidatorclass passwordValidatorclassObject = new passwordValidatorclass();
-        int result = passwordValidatorclassObject.passwordValidator(word1);
+        int result = passwordValidatorclassObject.passwordValidator(password);
 
-        generateOutput(result);
+
 
 
 
@@ -47,7 +46,7 @@ public class Solution25 {
 
     public static void readuserInput() {
 
-        word1 = in.next();
+       password = in.next();
     }
 
 }
