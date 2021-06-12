@@ -32,26 +32,32 @@ public class Solution25 {
 
     public static void main(String[] args) {
         System.out.println("Enter a password and I will tell you the strength. ");
-
-        //read in string
         readuserInput();
+        //allows access to new class
         password_Validator_class password_Validator_class_Object = new password_Validator_class();
         int result = password_Validator_class_Object.passwordValidator(password);
-
-        //0 = very weak password
-        //1 = weak password
-        //2 = strong password
-        //3 = very strong password
-
-
-
+        //method to print output using integer returned from passwordValidator method in other class
+        generateOutput(result);
     }
 
+    //reads user input
     public static void readuserInput() {
-
-       password = in.next();
+        password = in.next();
     }
 
+    //generates output based on integer returned from passwordValidator method in password_validator_class
+    public static void generateOutput(int result) {
+        if (result == 0)
+            System.out.printf("The password '%s' is a very weak password. ", password);
+        else if(result == 1)
+            System.out.printf("The password '%s' is a weak password. ", password);
+        else if(result == 2)
+            System.out.printf("The password '%s' is a strong password. ", password);
+        else if(result == 3)
+            System.out.printf("The password '%s' is a very strong password. ", password);
+        //Instructions do not include every scenario, so I created this option.
+        else
+        System.out.printf("The password '%s' does not fit parameters of program so password strength" +
+                "can not be determined. ", password);
+    }
 }
-//ADD NULL /*if (password == null) {
-//            return 3;*/
