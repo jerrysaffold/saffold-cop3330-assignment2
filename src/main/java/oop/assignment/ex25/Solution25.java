@@ -35,10 +35,13 @@ public class Solution25 {
 
         //read in string
         readuserInput();
-        passwordValidatorclass passwordValidatorclassObject = new passwordValidatorclass();
-        int result = passwordValidatorclassObject.passwordValidator(password);
+        password_Validator_class password_Validator_class_Object = new password_Validator_class();
+        int result = password_Validator_class_Object.passwordValidator(password);
 
-
+        //0 = very weak password
+        //1 = weak password
+        //2 = strong password
+        //3 = very strong password
 
 
 
@@ -50,3 +53,5 @@ public class Solution25 {
     }
 
 }
+//ADD NULL /*if (password == null) {
+//            return 3;*/
