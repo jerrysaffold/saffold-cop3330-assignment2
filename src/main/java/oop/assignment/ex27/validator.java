@@ -1,6 +1,6 @@
 package oop.assignment.ex27;
 
-public class validator {
+public class validator {/*
     public static int validateInput(String first_name, String last_name, String zip_code, String employee_id) {
         int first_name_result = first_name_validator(first_name);
         int last_name_result = last_name_validator(last_name);
@@ -31,5 +31,5 @@ public class validator {
 
     public static {
 
-    }
+    }*/
 }

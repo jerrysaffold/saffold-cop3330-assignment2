@@ -31,7 +31,7 @@ public class Solution25 {
     private static String password;
 
     public static void main(String[] args) {
-        System.out.println("Enter a password and I will tell you the strength. ");
+        System.out.println("How many numbers would you like to add? ");
         readuserInput();
         //allows access to new class
         password_Validator_class password_Validator_class_Object = new password_Validator_class();

@@ -54,7 +54,7 @@ public class Solution27 {
     public static void main(String[] args) {
         validator validator_Object = new validator();
         read_user_Input();
-        int validator_output = validator_Object.validateInput(first_name, last_name, zip_code, employee_id);
+        /*int validator_output = validator_Object.validateInput(first_name, last_name, zip_code, employee_id);*/
     }
 
     public static void read_user_Input() {
